@@ -1,9 +1,21 @@
 //backend logic
-if (input === false) {
-  alert("Enter a number");
-} else {
-  return true;
+
+
+
+var pingpong = function(numb) {
+  var divByThree = "Ping"
+  var divByFive = "Pong"
+if (numb % 5 === 0) {
+  return divByFive;
 }
+  else if (numb % 3 === 0) {
+    return divByThree;
+  } else {
+    return false;
+  };
+};
+
+
 
 
 
@@ -19,7 +31,8 @@ $(document).ready(function() {
   $("form#pingpong").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("input#num").val());
-    var result = input;
+    var result = pingpong(input);
+
 $("#result").text(result);
   });
 });
