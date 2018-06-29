@@ -5,7 +5,11 @@
 var pingpong = function(numb) {
   var divByThree = "Ping"
   var divByFive = "Pong"
-if (numb % 5 === 0) {
+
+  if (numb % 15 === 0) {
+    return divByThree+divByFive;
+  }
+else if (numb % 5 === 0) {
   return divByFive;
 }
   else if (numb % 3 === 0) {
