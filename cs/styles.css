@@ -3,7 +3,27 @@ h1#heading {
   font-weight: 1000;
   font-size: 200px;
 }
+h2 {
+  font-size: 100px;
+}
+h3 {
+  font-size: : 70px;
+}
+
 body {
   font-family: 'Indie Flower', cursive;
   font-size: 50px;
+}
+
+div#heading {
+  background-image: url("../img/first.jpg");
+  padding-top: 150px;
+  height: 600px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  
+}
+
+#rules {
+  background-color: rgb(60, 18, 85, 0.4);
 }
