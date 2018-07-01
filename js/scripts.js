@@ -1,4 +1,6 @@
 //backend logic
+
+// using variables to replace the numbers but without displaying all the numbers before the input
 /*var pingpong = function(numb) {
   var divByThree = "Ping"
   var divByFive = "Pong"
@@ -14,7 +16,9 @@ else if (numb % 5 === 0) {
     return numb;
   };
 };*/
-var pingpong = function(numb) {
+
+//using another variable within the loop to display all numbers including the input while doing replacement but displayin the result on the console.
+/*var pingpong = function(numb) {
 
   var counter = 0;
   while (counter < numb) {
@@ -33,12 +37,28 @@ var output = "";
     else if (counter % 3 === 0)
       output += "Ping";
 
-
       console.log(output || counter);
   };
+};*/
 
+//using .append() to display in a list, all numbers before and including the input number while doing replacement
+var pingpong = function(numb) {
+
+  var counter = 0;
+  while (counter < numb) {
+  counter++;
+
+    if (counter % 15 === 0){
+      $("#result").append("<li> PingPong </li>")
+    }  else if (counter % 5 === 0) {
+      $("#result").append("<li> Pong </li>")
+    }  else if (counter % 3 === 0) {
+      $("#result").append("<li> Ping </li>")
+    } else {
+      $("#result").append("<li>" + counter + "</li>")
+    };
+  };
 };
-
 
 
 
@@ -58,7 +78,7 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("input#num").val());
     var result = pingpong(input);
-
-    $("#result").text(result);
+$("#num").val("")
+  //  $("#result").text(result);
   });
 });

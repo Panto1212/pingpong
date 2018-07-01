@@ -5,23 +5,29 @@
   <meta charset="utf-8">
   <link href="cs/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="cs/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <title>PingPong</title>
 </head>
 
 <body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1 id="heading">PING-PONG</h1>
+    </div>
+  </div>
   <div class="container">
-
     <form id="pingpong">
       <div class="row">
 
-      <div class="form-group">
-        <label for="num">Enter Your Number Here :</label>
-        <input id="num" type="text" required>
+        <div class="form-group">
+          <label for="num">Enter Your Number Here :</label>
+          <input id="num" type="text" required>
+        </div>
+        <button type="submit" class="btn btn-info">Ping Pong!</button>
       </div>
-       <button type="submit" class="btn btn-info">Ping Pong!</button>
-       </div>
     </form>
-    <div id="result">
+    <div>
+      <ul id="result"></ul>
     </div>
   </div>
   <script src="js/jquery.js"></script>
