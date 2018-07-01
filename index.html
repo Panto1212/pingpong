@@ -16,12 +16,21 @@
     </div>
   </div>
   <div class="container">
+    <h2 id="mini">Let's Play!</h2>
+    <h3>Rules:</h3>
+    <p>Ping Pong will count up to your number from 1 with the following exceptions: </p>
+      <ol>
+        <li>Numbers divisible by 3 become "ping"</li>
+        <li>Numbers divisble by 5 become "pong"</li>
+        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+      </ol>
+    </div>
     <form id="pingpong">
       <div class="row">
 
         <div class="form-group">
           <label for="num">Enter Your Number Here :</label>
-          <input id="num" type="text" required>
+          <input id="num" type="text" placeholder="Type a number" required>
         </div>
         <button type="submit" class="btn btn-info">Ping Pong!</button>
       </div>
@@ -29,7 +38,7 @@
     <div>
       <ul id="result"></ul>
     </div>
-  </div>
+
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
 </body>
