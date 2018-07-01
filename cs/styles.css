@@ -5,9 +5,11 @@ h1#heading {
 }
 h2 {
   font-size: 100px;
+  font-weight: bolder;
 }
 h3 {
-  font-size: : 70px;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 body {
@@ -21,9 +23,11 @@ div#heading {
   height: 600px;
   color: #ffffff;
   margin-bottom: 50px;
-  
-}
 
+}
+.well {
+    background-color: rgb(60, 18, 85, 0.7);
+}
 #rules {
-  background-color: rgb(60, 18, 85, 0.4);
+
 }
