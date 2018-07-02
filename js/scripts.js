@@ -77,6 +77,7 @@ $(document).ready(function() {
   $("form#pingpong").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("input#num").val());
+    $("#result").empty();
     var result = pingpong(input);
 $("#num").val("")
   //  $("#result").text(result);
